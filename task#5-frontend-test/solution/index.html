@@ -1,40 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>FrontEnd Test</title>
 </head>
 
 <body>
-    
-
-    <div class="parallax">
-        <div class="parallax__layer parallax__layer__0">
-            <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true" />
-        </div>
-        <div class="parallax__layer parallax__layer__1">
-            <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_1.png?raw=true" />
-        </div>
-        <div class="parallax__layer parallax__layer__2">
-            <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_2.png?raw=true" />
-        </div>
-        <div class="parallax__layer parallax__layer__3">
-            <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_3.png?raw=true" />
-        </div>
-        <div class="parallax__layer parallax__layer__4">
-            <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_4.png?raw=true" />
-        </div>
-        <div class="parallax__layer parallax__layer__5">
-            <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_5.png?raw=true" />
-        </div>
-        <div class="parallax__layer parallax__layer__6">
-            <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true" />
-        </div>
-        <div class="parallax__cover"></div>
+    <div class="wrapper">
+        <main class="main__section">
+            <div class="back__side">
+                <div class="clouds">
+                    <div class="cloud01">
+                        <img src="./images/cloud-01.png" alt="cloud image" />
+                    </div>
+                    <div class="cloud02">
+                        <img src="./images/cloud-02.png" alt="cloud image" />
+                    </div>
+                    <div class="cloud03">
+                        <img src="./images/cloud-03.png" alt="cloud image" />
+                    </div>
+                    <div class="cloud04">
+                        <img src="./images/cloud-04.png" alt="cloud image" />
+                    </div>
+                    <div class="cloud05">
+                        <img src="./images/cloud-05.png" alt="cloud image" />
+                    </div>
+                    <div class="cloud06">
+                        <img src="./images/cloud-06.png" alt="cloud image" />
+                    </div>
+                </div>
+                <div class="mountains">
+                    <img src="./images/mountains-01.png" alt="mountains">
+                    <img src="./images/mountains-02.png" alt="mountains">
+                </div>
+                <div class="back__side-cover">
+                    <img src="./images/logo.png" alt="logotype">
+                </div>
+                <div class="back__side-bg"></div>
+            </div>
+            <div class="front__side">
+                <div class="birds">
+                    <div class="bird01">
+                        <img src="./images/bird-01.png" alt="birds">
+                    </div>
+                    <div class="bird02">
+                        <img src="./images/bird-02.png" alt="birds">
+                    </div>
+                </div>
+                <div class="sea">
+                    <img src="./images/sea.png" alt="sea">
+                </div>
+                <div class="houses">
+                    <div class="house01">
+                        <img src="./images/house-01.png" alt="house">
+                    </div>
+                    <div class="house02">
+                        <img src="./images/house-02.png" alt="house">
+                    </div>
+                </div>
+                <div class="trees">
+                    <div class="tree01">
+                        <img src="./images/tree-01.png" alt="tree">
+                    </div>
+                    <div class="tree02">
+                        <img src="./images/tree-02.png" alt="tree">
+                    </div>
+                </div>
+                <div class="people">
+                    <div class="people01">
+                        <img src="./images/person-1.png" alt="people">
+                    </div>
+                    <div class="people02">
+                        <img src="./images/person-2.png" alt="people">
+                    </div>
+                    <div class="people03" id="hi">
+                        <img src="./images/person-3.png" alt="people">
+                    </div>
+                    <div class="people04">
+                        <img src="./images/person-4.png" alt="people">
+                    </div>
+                    <div class="people05">
+                        <img src="./images/person-5.png" alt="people">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="services__section">
+            <div class="container">
+                <div class="services__inner">
+                    <h1>Dev2Master Frontend Test</h1>
+                    <span class="divide__line"></span>
+                    <div class="card__block">
+                        <div class="card__item first">
+                            <div class="card__item-img">
+                                <img src="./images/card-01.png" alt="card">
+                            </div>
+                            <h3>Aenean nec sem vestibulum</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit optio, inventore accusamus dicta delectus illum corporis porro tempora itaque! Modi, sit ipsam.</p>
+                        </div>
+                        <div class="arrow__item">
+                            <img src="./images/arrow-right.svg" alt="arrow">
+                        </div>
+                        <div class="card__item second">
+                            <div class="card__item-img">
+                                <svg width="97px" height="98px">
+                                    <defs>
+                                        <linearGradient id="PSgrad_0" x1="81.915%" x2="0%" y1="57.358%" y2="0%">
+                                            <stop offset="0%" stop-color="rgb(255,123,2)" stop-opacity="1" />
+                                            <stop offset="100%" stop-color="rgb(255,203,82)" stop-opacity="1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill-rule="evenodd"  d="M93.120,83.533 L3.880,83.533 C1.737,83.533 -0.000,81.680 -0.000,79.395 L-0.000,19.387 C-0.000,17.101 1.737,15.248 3.880,15.248 L59.575,15.248 L55.477,21.456 L5.821,21.456 L5.821,71.118 L91.181,71.118 L91.181,21.456 L75.661,21.456 L81.009,15.248 L93.120,15.248 C95.263,15.248 97.000,17.101 97.000,19.387 L97.000,79.395 C97.000,81.680 95.263,83.533 93.120,83.533 ZM42.405,60.105 C33.399,64.080 20.498,60.974 25.866,60.929 C31.234,60.885 31.902,59.505 33.652,53.757 C36.879,44.685 51.412,56.132 42.405,60.105 ZM48.324,49.290 C45.606,52.889 46.233,52.727 43.629,50.489 C41.024,48.252 41.010,48.939 43.730,45.341 L71.269,3.609 C73.988,0.010 78.302,-1.092 80.908,1.146 C83.512,3.384 83.418,8.116 80.700,11.716 L48.324,49.290 ZM72.082,4.497 C73.423,5.642 73.827,6.142 73.827,6.142 C73.827,6.142 74.297,3.997 78.047,1.636 C78.047,1.636 74.093,0.993 72.082,4.497 ZM35.964,95.269 C37.645,93.951 37.820,91.968 37.820,91.968 L38.453,87.672 L58.546,87.672 L59.176,91.971 C59.176,91.971 59.355,93.951 61.036,95.270 C62.714,96.592 64.040,97.721 62.716,97.911 C61.438,98.095 49.390,97.927 48.500,97.911 C47.611,97.927 35.561,98.095 34.284,97.911 C32.958,97.719 34.284,96.587 35.964,95.269 Z"/>
+                                    <path fill="url(#PSgrad_0)" d="M93.120,83.533 L3.880,83.533 C1.737,83.533 -0.000,81.680 -0.000,79.395 L-0.000,19.387 C-0.000,17.101 1.737,15.248 3.880,15.248 L59.575,15.248 L55.477,21.456 L5.821,21.456 L5.821,71.118 L91.181,71.118 L91.181,21.456 L75.661,21.456 L81.009,15.248 L93.120,15.248 C95.263,15.248 97.000,17.101 97.000,19.387 L97.000,79.395 C97.000,81.680 95.263,83.533 93.120,83.533 ZM42.405,60.105 C33.399,64.080 20.498,60.974 25.866,60.929 C31.234,60.885 31.902,59.505 33.652,53.757 C36.879,44.685 51.412,56.132 42.405,60.105 ZM48.324,49.290 C45.606,52.889 46.233,52.727 43.629,50.489 C41.024,48.252 41.010,48.939 43.730,45.341 L71.269,3.609 C73.988,0.010 78.302,-1.092 80.908,1.146 C83.512,3.384 83.418,8.116 80.700,11.716 L48.324,49.290 ZM72.082,4.497 C73.423,5.642 73.827,6.142 73.827,6.142 C73.827,6.142 74.297,3.997 78.047,1.636 C78.047,1.636 74.093,0.993 72.082,4.497 ZM35.964,95.269 C37.645,93.951 37.820,91.968 37.820,91.968 L38.453,87.672 L58.546,87.672 L59.176,91.971 C59.176,91.971 59.355,93.951 61.036,95.270 C62.714,96.592 64.040,97.721 62.716,97.911 C61.438,98.095 49.390,97.927 48.500,97.911 C47.611,97.927 35.561,98.095 34.284,97.911 C32.958,97.719 34.284,96.587 35.964,95.269 Z"/>
+                                </svg>
+                            </div>
+                            <h3>Aenean nec sem vestibulum</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur. Corporis beatae officiis tempore quo fugiat accusamus neque? Velit repudiandae quaerat explicabo, eos nobis iste deserunt dolorem?</p>
+                        </div>
+                        <div class="arrow__item">
+                            <img src="./images/arrow-right.svg" alt="arrow">
+                        </div>
+                        <div class="card__item third">
+                            <div class="item__overlay-bg">
+                                <div class="card__item-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="97" height="98" viewBox="0 0 97 98">
+                                    <path strokeid="Forma_1" data-name="Forma 1" class="cls-1" d="M973.036,1085.27a5.17,5.17,0,0,1-1.86-3.3l-0.63-4.3H950.453l-0.633,4.3a5.154,5.154,0,0,1-1.856,3.3c-1.68,1.32-3.006,2.45-1.68,2.64,1.277,0.19,13.327.02,14.216,0,0.89,0.02,12.938.19,14.216,0C976.04,1087.72,974.714,1086.59,973.036,1085.27Zm-35.17-34.34c5.368-.05,6.036-1.43,7.786-7.17,3.227-9.08,17.76,2.37,8.753,6.34S932.5,1050.97,937.866,1050.93Zm55.042-59.784c-2.606-2.238-6.92-1.136-9.639,2.463L955.73,1035.34c-2.72,3.6-2.706,2.91-.1,5.15s1.977,2.4,4.695-1.2l32.376-37.57C995.418,998.116,995.512,993.384,992.908,991.146Zm-7.081,5a15.433,15.433,0,0,0-1.745-1.645,6.024,6.024,0,0,1,5.965-2.861C986.3,994,985.827,996.142,985.827,996.142Zm19.293,9.108H993.009l-5.348,6.21h15.519v49.66H917.821v-49.66h49.656l4.1-6.21h-55.7a4.014,4.014,0,0,0-3.88,4.14v60.01a4.011,4.011,0,0,0,3.88,4.13h89.24a4.013,4.013,0,0,0,3.88-4.13v-60.01A4.016,4.016,0,0,0,1005.12,1005.25Z" transform="translate(-912 -990)"/>
+                                </svg>
+                                </div>
+                                <h3>Aenean nec sem vestibulum</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sunt quibusdam dicta quisquam obcaecati minus, sit eaque, at, voluptates quasi aut nam rem iusto cumque?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn__overlay">
+                        <button class="btn">Aenean vitae</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

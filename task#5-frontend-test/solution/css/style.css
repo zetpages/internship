@@ -1,0 +1,719 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: MyriadBold;
+        src: url("../fonts/MYRIADPRO-BOLD.OTF");
+    }
+    
+    @font-face {
+        font-family: MyriadRegular;
+        src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+    }
+    
+    @font-face {
+        font-family: MyriadLight;
+        src: url("../fonts/MyriadPro-Light.otf");
+    }
+    
+    body {
+        background: #fff;
+        font-family: MyriadRegular;
+    }
+    
+    .wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .main__section {
+        width: 100%;
+        height: 710px;
+        /* background: #666; */
+    }
+    
+    .back__side {
+        width: 100%;
+        height: 70%;
+        position: relative;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    
+    .back__side-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #666;
+        z-index: -1;
+    }
+    
+    .clouds {
+        width: 100%;
+        position: relative;
+    }
+    
+    .clouds img {
+        width: 80%;
+    }
+    
+    .cloud01 {
+        position: absolute;
+        top: 15px;
+        left: 7%;
+    }
+    
+    .cloud02 {
+        position: absolute;
+        top: 40px;
+        left: 17%;
+    }
+    
+    .cloud03 {
+        position: absolute;
+        left: 48%;
+        top: 10px;
+    }
+    
+    .cloud04 {
+        position: absolute;
+        left: 56%;
+        top: 15px;
+    }
+    
+    .cloud05 {
+        position: absolute;
+        right: 10%;
+        top: 90px;
+    }
+    
+    .cloud06 {
+        position: absolute;
+        top: 50px;
+        right: 3%;
+    }
+    
+    .back__side-cover {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, #1cb78ed5, #1c72b8d5);
+    }
+    
+    .back__side-cover img {
+        width: 28%;
+    }
+    
+    .mountains {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .mountains img {
+        /*two layers of image at the same position*/
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+    }
+    
+    .front__side {
+        width: 100%;
+        height: 30%;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .birds {
+        position: absolute;
+        top: -150px;
+        left: 0px;
+        width: 100%;
+    }
+    
+    .bird01 {
+        position: absolute;
+        left: 40px;
+        top: -40px;
+    }
+    
+    .bird02 {
+        position: absolute;
+        right: 30px;
+    }
+    
+    .sea {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sea img {
+        width: 100%;
+    }
+    
+    .houses {
+        width: 100%;
+        position: relative;
+    }
+    
+    .house01 {
+        position: absolute;
+        top: -25px;
+        left: 170px;
+    }
+    
+    .house01 img {
+        width: 60%;
+    }
+    
+    .house02 {
+        position: absolute;
+        top: -100px;
+        right: 130px;
+    }
+    
+    .house02 img {
+        width: 80%;
+    }
+    /* .houses img {
+        width: 80%;
+    } */
+    
+    .trees {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -270px;
+    }
+    
+    .trees img {
+        width: 70%;
+    }
+    
+    .tree01 {
+        position: absolute;
+        left: 0;
+    }
+    
+    .tree02 {
+        position: absolute;
+        right: -130px;
+    }
+    
+    .people {
+        width: 100%;
+        position: relative;
+    }
+    
+    .people img {
+        width: 70%;
+    }
+    
+    .people01 {
+        position: absolute;
+        top: -50px;
+        left: 40px;
+    }
+    
+    .people02 {
+        position: absolute;
+        top: -70px;
+        right: 41%;
+    }
+    
+    .people03 {
+        position: absolute;
+        top: -10px;
+        right: 40%;
+    }
+    
+    .people04 {
+        position: absolute;
+        top: -70px;
+        right: 200px;
+    }
+    
+    .people05 {
+        position: absolute;
+        top: -50px;
+        right: 40px;
+    }
+    
+    .card__item-img svg {
+        fill: #fff;
+        transition: all 0.3s ease;
+    }
+    /* services section start! */
+    
+    .services__section {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+    
+    .services__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .services__inner h1 {
+        font-size: 50px;
+        font-family: MyriadBold;
+        color: rgb(79, 78, 77);
+    }
+    
+    .divide__line {
+        width: 100px;
+        height: 2px;
+        margin: 40px auto;
+        background: rgb(255, 129, 8);
+    }
+    
+    .card__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .card__item {
+        max-width: 395px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
+        border-radius: 10px;
+        min-height: 390px;
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+    
+    .card__item-img {
+        /* min-width: 355px; */
+        min-height: 150px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card__item h3 {
+        margin: 15px 0px 20px 0px;
+        font-size: 25px;
+        font-family: MyriadBold;
+        color: rgb(79, 78, 77);
+        transition: all 0.3s linear;
+    }
+    
+    .card__item p {
+        font-size: 16px;
+        font-family: MyriadLight;
+        color: rgb(140, 140, 140);
+        line-height: 1.875rem;
+        transition: all 0.3s linear;
+    }
+    
+    .card__item.first {
+        text-align: left;
+        padding: 20;
+    }
+    
+    .card__item.second {
+        background: #fff;
+        transition: all 0.3s linear;
+        -webkit-transition: all .3 linear;
+    }
+    
+    .card__item.third {
+        padding: 0;
+        position: relative;
+        background: url("./images/card-03.png") center / cover no-repeat;
+    }
+    
+    .card__item.third h3,
+    .card__item.third p {
+        color: #fff;
+    }
+    
+    .item__overlay-bg {
+        width: 100%;
+        min-height: 390px;
+        padding: 20px;
+        background: linear-gradient( 90deg, rgba(36, 20, 223, .85) 0%, rgba(70, 26, 242, .85) 100%);
+        z-index: -1;
+    }
+    
+    .card__item.second:hover {
+        box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
+        background-image: linear-gradient( 145deg, rgb(92, 39, 254) 0%, rgb(193, 101, 221) 100%);
+        transition: all 0.3s linear;
+    }
+    
+    .card__item.second:hover .card__item-img>svg>path,
+    .card__item.second:hover h3,
+    .card__item.second:hover p {
+        fill: #fff;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .card__item.second:hover .card__item-img>svg {
+        transform: scale(1.2);
+    }
+    
+    .btn__overlay {
+        background-image: linear-gradient(to left, rgb(69, 18, 223) 0%, rgb(193, 101, 221)100%);
+        border-radius: 12px;
+        box-sizing: border-box;
+        color: #00a84f;
+        display: block;
+        letter-spacing: 1px;
+        padding: 2px;
+        margin: 60px 0px;
+        position: relative;
+        text-decoration: none;
+        z-index: 2;
+        overflow: hidden;
+    }
+    
+    .btn__overlay:hover .btn {
+        color: #fff;
+    }
+    
+    .btn__overlay .btn {
+        font-family: MyriadRegular;
+        font-size: 25px;
+        align-items: center;
+        background: #fff;
+        color: rgb(92, 39, 254);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        transition: background .5s ease;
+        width: 100%;
+        padding: 15px 55px;
+        border: none;
+    }
+    
+    .btn__overlay:hover .btn {
+        background: transparent;
+    }
+    /* services section end! */
+    
+    @media only screen and (max-width: 1224px) {
+        .card__block {
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+        .card__item {
+            margin: 0 auto;
+        }
+        .arrow__item {
+            margin: 20px auto;
+        }
+        .arrow__item img {
+            transform: rotate(90deg);
+        }
+        .services__inner h1 {
+            font-size: 2.5rem;
+        }
+        .trees img {
+            width: 50%;
+        }
+        .tree02 {
+            right: -210px;
+            top: 90px;
+        }
+        .tree01 {
+            top: 90px;
+        }
+        .house01 img {
+            width: 40%;
+        }
+        .house02 img {
+            width: 60%;
+        }
+        .house01 {
+            top: -5px;
+        }
+        .house02 {
+            top: -70px;
+            right: 50px;
+        }
+        .people img {
+            width: 50%;
+        }
+        .people01 {
+            top: 0px;
+            left: 50px;
+        }
+        .people02 {
+            top: -20px;
+            right: 30%;
+        }
+        .people03 {
+            top: -10px;
+            right: 40%;
+        }
+        .people04 {
+            top: -30px;
+            right: 200px;
+        }
+        .people05 {
+            position: absolute;
+            top: 0px;
+            right: 40px;
+        }
+        .back__side-cover img {
+            width: 40%;
+        }
+        .clouds img {
+            width: 60%;
+        }
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .main__section {
+            height: 600px;
+        }
+        .trees img {
+            width: 40%;
+        }
+        .tree02 {
+            right: -250px;
+            top: 140px;
+        }
+        .tree01 {
+            top: 140px;
+        }
+        .house01 img {
+            width: 30%;
+        }
+        .house02 img {
+            width: 40%;
+        }
+        .house01 {
+            top: 10px;
+            left: 100px;
+        }
+        .house02 {
+            top: -20px;
+            right: -30px;
+        }
+        .people img {
+            width: 40%;
+        }
+        .people01 {
+            top: 0px;
+            left: 50px;
+        }
+        .people02 {
+            top: -10px;
+            right: 30%;
+        }
+        .people03 {
+            top: -10px;
+            right: 50%;
+        }
+        .people04 {
+            top: -20px;
+            right: 140px;
+        }
+        .people05 {
+            position: absolute;
+            top: 0px;
+            right: 40px;
+        }
+        .clouds img {
+            width: 50%;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .main__section {
+            height: 400px;
+        }
+        .trees img {
+            width: 30%;
+        }
+        .tree02 {
+            right: -300px;
+            top: 170px;
+        }
+        .tree01 {
+            top: 170px;
+        }
+        .house01 {
+            top: 0px;
+            left: 80px;
+        }
+        .house02 {
+            top: -40px;
+            right: -80px;
+        }
+        .bird01,
+        .bird02 {
+            top: 80px;
+        }
+        .bird01 img,
+        .bird02 img {
+            width: 50%;
+        }
+        .people img {
+            width: 30%;
+        }
+        .people01 {
+            display: none;
+        }
+        .people02 {
+            top: -10px;
+            right: 15%;
+        }
+        .people03 {
+            top: -10px;
+            right: 40%;
+        }
+        .people03 img {
+            width: 70%;
+        }
+        .people04 {
+            display: none;
+        }
+        .people05 {
+            display: none;
+        }
+        .clouds img {
+            width: 30%;
+        }
+    }
+    
+    @media only screen and (max-width: 420px) {
+        .services__inner h1 {
+            margin-top: 40px;
+        }
+        .main__section {
+            height: 200px;
+        }
+        .front__side {
+            height: 20%;
+        }
+        .back__side {
+            height: 80%;
+        }
+        .trees img {
+            width: 15%;
+        }
+        .tree02 {
+            right: -360px;
+            top: 230px;
+        }
+        .tree01 {
+            top: 230px;
+        }
+        .house01 img {
+            width: 20%;
+        }
+        .house02 img {
+            width: 20%;
+        }
+        .house01 {
+            top: 2px;
+            left: 40px;
+        }
+        .house02 {
+            top: -15px;
+            right: -200px;
+        }
+        .bird01,
+        .bird02 {
+            top: 110px;
+        }
+        .bird02 {
+            right: -50px;
+        }
+        .bird01 img,
+        .bird02 img {
+            width: 30%;
+        }
+        .people img {
+            width: 15%;
+        }
+        .people02 {
+            top: 0px;
+            right: -30%;
+        }
+        .people03 {
+            top: -10px;
+            right: 35%;
+        }
+        .people03 img {
+            width: 40%;
+        }
+        .clouds img {
+            width: 20%;
+        }
+        .cloud01 {
+            top: -40px;
+            left: 7%;
+        }
+        .cloud02 {
+            top: -30px;
+            left: 17%;
+        }
+        .cloud03 {
+            left: 48%;
+            top: -40px;
+        }
+        .cloud04 {
+            left: 56%;
+            top: -45px;
+        }
+        .cloud05 {
+            right: -17%;
+            top: -30px;
+        }
+        .cloud06 {
+            right: -60px;
+            top: -20px;
+        }
+    }
+    
+    @media only screen and (max-width: 375px) {
+        .house01 {
+            top: -5px;
+            left: 40px;
+        }
+        .people02 {
+            top: 0px;
+            right: -42%;
+        }
+        .people03 {
+            top: -5px;
+            right: 35%;
+        }
+    }
